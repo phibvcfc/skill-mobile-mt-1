@@ -80,28 +80,31 @@ iOS only?
 
 ## Context Cost
 
-| Scenario | Tokens | % of 128K |
-|----------|-------:|----------:|
-| SKILL.md only | ~3,354 | 2.6% |
-| + 1 platform + shared/ | ~6,700 | 5.2% |
-| Cross-platform (Flutter/RN + iOS + Android) | ~9,400 | 7.3% |
-| All files loaded | ~13,571 | 10.6% |
-| **Smart load (recommended)** | **~6,700** | **5.2%** |
+| Scenario | Tokens | % of 128K | % of 200K |
+|----------|-------:|----------:|----------:|
+| SKILL.md only | ~4,000 | 3.1% | 2.0% |
+| + 1 platform + shared/ | ~12,000 | 9.4% | 6.0% |
+| Cross-platform (RN/Flutter + iOS + Android) | ~16,000 | 12.5% | 8.0% |
+| All files loaded | ~26,300 | 20.5% | 13.2% |
+| **Smart load (recommended)** | **~12,000** | **9.4%** | **6.0%** |
 
-### Per-file breakdown
+### Per-file token breakdown
 
 | File | Tokens |
 |------|-------:|
-| `SKILL.md` | 3,354 |
-| `AGENTS.md` | 1,761 |
-| `react-native/react-native.md` | 1,947 |
-| `flutter/flutter.md` | 1,911 |
-| `ios/ios-native.md` | 1,450 |
-| `android/android-native.md` | 1,717 |
-| `shared/code-review.md` | 374 |
-| `shared/bug-detection.md` | 571 |
-| `shared/prompt-engineering.md` | 486 |
-| **Total** | **13,571** |
+| `SKILL.md` | 4,011 |
+| `AGENTS.md` | 1,541 |
+| `react-native/react-native.md` | 5,108 |
+| `flutter/flutter.md` | 1,617 |
+| `ios/ios-native.md` | 1,452 |
+| `android/android-native.md` | 1,659 |
+| `shared/code-review.md` | 865 |
+| `shared/bug-detection.md` | 499 |
+| `shared/prompt-engineering.md` | 3,927 |
+| `shared/common-pitfalls.md` | 1,160 |
+| `shared/error-recovery.md` | 2,435 |
+| `shared/release-checklist.md` | 587 |
+| **Total** | **26,303** |
 
 ## Installed Structure
 
@@ -121,7 +124,10 @@ iOS only?
     └── shared/
         ├── code-review.md          Senior review checklist
         ├── bug-detection.md        Auto bug scanner
-        └── prompt-engineering.md   Auto-think for all AIs
+        ├── prompt-engineering.md   Intelligent prompt generation
+        ├── common-pitfalls.md      Problem → Symptoms → Solution
+        ├── error-recovery.md       Fix build/runtime errors
+        └── release-checklist.md    Pre-release verification
 ```
 
 ## What's Included
@@ -141,9 +147,23 @@ iOS only?
 - Security vulnerabilities, performance issues, UX problems
 - Platform-specific detection rules
 
-### Prompt Engineering
-- Auto-think blocks before every action (Fix / Build / Review / Refactor)
-- Multi-AI format support (Claude, Gemini, Kimi, Cursor, Copilot)
+### Intelligent Prompt Engineering
+- XML tag structure for clarity (`<task>`, `<context>`, `<instructions>`, `<constraints>`)
+- Enhanced auto-think templates with 4-phase build process
+- Progressive context loading (5 levels: overview → pattern → files → docs → expert)
+- Just-in-time file reading (grep first, read only needed)
+- Reference pattern system (clone existing instead of reading docs)
+- Multi-AI format support (Claude, Gemini, Kimi, Cursor, Copilot, Windsurf)
+
+### Error Recovery
+- 16 common build/runtime errors with concrete fixes
+- Platform-specific solutions (RN CLI, Expo, Flutter, iOS, Android)
+- General recovery protocol for systematic debugging
+
+### Release & Review
+- Pre-release checklist for App Store and Play Store submissions
+- Common pitfalls with Problem → Symptoms → Solution format
+- Security audit patterns
 
 ### Security Non-Negotiables
 - No hardcoded secrets
