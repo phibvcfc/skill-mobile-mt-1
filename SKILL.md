@@ -323,6 +323,7 @@ file upload / camera →
 | All platforms | `shared/prompt-engineering.md` | 🟡 ALWAYS |
 | All platforms | `shared/release-checklist.md` | 🟡 ON RELEASE |
 | All platforms | `shared/common-pitfalls.md` | 🟡 ON REVIEW |
+| All platforms | `shared/error-recovery.md` | 🟡 ON ERROR |
 
 **Cross-platform:** Flutter/RN projects also load `ios/` + `android/` for native modules.
 
@@ -428,5 +429,6 @@ skill-mobile-mt/
     ├── bug-detection.md              ← 🔴 Auto bug scanner
     ├── prompt-engineering.md         ← 🟡 Auto-think templates
     ├── release-checklist.md          ← 🟡 Before shipping to app store
-    └── common-pitfalls.md            ← 🟡 Problem → Symptoms → Solution
+    ├── common-pitfalls.md            ← 🟡 Problem → Symptoms → Solution
+    └── error-recovery.md             ← 🟡 Fix build/runtime errors
 ```

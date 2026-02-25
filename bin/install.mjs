@@ -35,7 +35,7 @@ const SUBFOLDERS = {
   'flutter':      ['flutter.md'],
   'ios':          ['ios-native.md'],
   'android':      ['android-native.md'],
-  'shared':       ['code-review.md', 'bug-detection.md', 'prompt-engineering.md', 'release-checklist.md', 'common-pitfalls.md'],
+  'shared':       ['code-review.md', 'bug-detection.md', 'prompt-engineering.md', 'release-checklist.md', 'common-pitfalls.md', 'error-recovery.md'],
 };
 
 const AGENTS = {
