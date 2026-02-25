@@ -1,6 +1,6 @@
 # Skill Mobile MT — Agent Rules
 
-> Multi-agent compatibility layer for Claude Code, Gemini CLI, Kimi, Cursor, Copilot, Antigravity, and all Agent Skills-compatible tools.
+> Multi-agent compatibility layer for Claude Code, Codex, Gemini CLI, Kimi, Cursor, Copilot, Windsurf, Antigravity, and all Agent Skills-compatible tools.
 
 ---
 
@@ -9,6 +9,7 @@
 | Agent | Skill Path | Invocation | Think Block |
 |-------|-----------|------------|-------------|
 | Claude Code | `~/.claude/skills/skill-mobile-mt/` | `@skill-mobile-mt` or `@skill-mobile-mt local` | `<think>...</think>` |
+| Codex | `~/.codex/skills/skill-mobile-mt/` | `@skill-mobile-mt` or load as context | `<think>...</think>` |
 | Gemini CLI | `~/.gemini/skills/skill-mobile-mt/` | Load as context | `## Thinking:` block |
 | Kimi | `~/.kimi/skills/skill-mobile-mt/` | Load as context | `【思考】` or markdown |
 | Cursor | `~/.cursor/skills/skill-mobile-mt/` | Auto-loaded in Composer | Inline reasoning |

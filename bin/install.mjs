@@ -40,6 +40,7 @@ const SUBFOLDERS = {
 
 const AGENTS = {
   claude:       { name: 'Claude Code',     dir: join(HOME, '.claude', 'skills'),   detect: () => existsSync(join(HOME, '.claude')) },
+  codex:        { name: 'Codex',           dir: join(HOME, '.codex', 'skills'),    detect: () => existsSync(join(HOME, '.codex')) },
   gemini:       { name: 'Gemini CLI',      dir: join(HOME, '.gemini', 'skills'),   detect: () => existsSync(join(HOME, '.gemini')) },
   kimi:         { name: 'Kimi',            dir: join(HOME, '.kimi', 'skills'),     detect: () => existsSync(join(HOME, '.kimi')) },
   antigravity:  { name: 'Antigravity',     dir: join(HOME, '.agents', 'skills'),   detect: () => existsSync(join(HOME, '.agents')) },
@@ -59,8 +60,8 @@ function banner() {
   log(`  │  📱 @buivietphi/skill-mobile v1.0.0          │`);
   log(`  │  Master Senior Mobile Engineer                │`);
   log(`  │                                              │`);
-  log(`  │  Claude · Gemini · Kimi · Antigravity        │`);
-  log(`  │  Cursor · Windsurf · Copilot                 │`);
+  log(`  │  Claude · Codex · Gemini · Kimi              │`);
+  log(`  │  Antigravity · Cursor · Windsurf · Copilot  │`);
   log(`  │  React Native · Flutter · iOS · Android      │`);
   log(`  └──────────────────────────────────────────────┘${c.reset}\n`);
 }

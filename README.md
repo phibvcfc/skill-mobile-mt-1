@@ -1,6 +1,6 @@
 # @buivietphi/skill-mobile
 
-**Master Senior Mobile Engineer** — AI skill for Claude Code, Gemini CLI, Kimi, Cursor, Copilot, Windsurf, and Antigravity.
+**Master Senior Mobile Engineer** — AI skill for Claude Code, Codex, Gemini CLI, Kimi, Cursor, Copilot, Windsurf, and Antigravity.
 
 Pre-built architecture patterns from **18 production mobile apps** + auto-adaptation to your current project.
 
@@ -16,6 +16,7 @@ Interactive mode — detects which AI agents are installed and prompts you.
 
 ```bash
 npx @buivietphi/skill-mobile --claude       # Claude Code only
+npx @buivietphi/skill-mobile --codex        # Codex only
 npx @buivietphi/skill-mobile --gemini       # Gemini CLI only
 npx @buivietphi/skill-mobile --kimi         # Kimi only
 npx @buivietphi/skill-mobile --antigravity  # Antigravity only
@@ -175,6 +176,7 @@ iOS only?
 | Agent | Install Path | Status |
 |-------|-------------|--------|
 | Claude Code | `~/.claude/skills/skill-mobile-mt/` | Full support |
+| Codex | `~/.codex/skills/skill-mobile-mt/` | Full support |
 | Gemini CLI | `~/.gemini/skills/skill-mobile-mt/` | Full support |
 | Kimi | `~/.kimi/skills/skill-mobile-mt/` | Full support |
 | Cursor | `~/.cursor/skills/skill-mobile-mt/` | Full support |
