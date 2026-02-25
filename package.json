@@ -1,0 +1,50 @@
+{
+  "name": "@buivietphi/skill-mobile",
+  "version": "1.0.0",
+  "description": "Master Senior Mobile Engineer skill for AI agents. Pre-built patterns from 18 production apps + local project adaptation. React Native, Flutter, iOS, Android. Supports Claude, Gemini, Kimi, Cursor, Copilot, Antigravity.",
+  "author": "buivietphi",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "gemini",
+    "kimi",
+    "antigravity",
+    "cursor",
+    "agent-skills",
+    "mobile",
+    "react-native",
+    "flutter",
+    "ios",
+    "android",
+    "clean-architecture",
+    "code-review",
+    "prompt-engineering"
+  ],
+  "bin": {
+    "skill-mobile": "bin/install.mjs"
+  },
+  "files": [
+    "bin/",
+    "SKILL.md",
+    "AGENTS.md",
+    "react-native/",
+    "flutter/",
+    "ios/",
+    "android/",
+    "shared/"
+  ],
+  "scripts": {
+    "postinstall": "node bin/install.mjs --auto",
+    "install:claude": "node bin/install.mjs --claude",
+    "install:gemini": "node bin/install.mjs --gemini",
+    "install:kimi": "node bin/install.mjs --kimi",
+    "install:all": "node bin/install.mjs --all"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/buivietphi/skill-mobile-mt"
+  }
+}
